@@ -9,7 +9,7 @@ body {
     display: flex;
 }
 header {
-    background: #333;
+    background: black;
     color: white;
     padding: 20px;
     text-align: center;
@@ -22,7 +22,7 @@ header {
     margin-right: auto;
 }
 nav {
-    background: #444;
+    background: black;
     padding: 10px;
     text-align: center;
     padding-top: 20px;
