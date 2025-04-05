@@ -5,16 +5,32 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+.head{
+    display: flex;
+}
 header {
     background: #333;
     color: white;
     padding: 20px;
     text-align: center;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 nav {
     background: #444;
     padding: 10px;
     text-align: center;
+    padding-top: 20px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border-radius: 50px;
 }
 nav ul {
     list-style: none;
@@ -22,11 +38,15 @@ nav ul {
 }
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 7px;
 }
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+#resume{
+    text-decoration: none;
+    color: white;
 }
 section {
     padding: 20px;
