@@ -108,11 +108,14 @@ section {
 }
 .p_main{
     width: 100%;
-    display: inline-flex;
+    display: flex;
 }
 .p_first{
     width: 50%;
     text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .p_img{
     width: 80%;
