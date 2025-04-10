@@ -9,8 +9,7 @@ body {
     display: flex;
 }
 header {
-    background: black;
-    color: white;
+    color: black;
     padding: 20px;
     text-align: center;
     border-radius: 50px;
@@ -24,6 +23,7 @@ header {
 nav {
     background: black;
     padding: 10px;
+    padding-bottom: 20px;
     text-align: center;
     padding-top: 20px;
     display: inline-block;
@@ -40,11 +40,7 @@ nav ul li {
     display: inline;
     margin: 0 7px;
 }
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-#resume{
+.resume{
     text-decoration: none;
     color: white;
 }
@@ -80,15 +76,6 @@ section {
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(218, 216, 216);
-}
-.c_main:hover{
-    width: 100%;
-    display: inline-flex;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: rgb(231, 227, 227);
-    transition: 1s;
-    cursor: pointer;
 }
 .first{
     width: 50%;
@@ -139,4 +126,12 @@ section {
 .contact_link{
     text-decoration: none;
     color: black;
+}
+#mode{
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
