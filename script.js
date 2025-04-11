@@ -17,25 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let mode = document.querySelector("#mode");
 let current_mode = "light";
+let body = document.querySelector("body");
+let sec = document.querySelectorAll("section");
 
 mode.addEventListener("click", () => {
     if(current_mode === "light"){
         console.log("Light");
         mode.innerText = "Dark mode";
         current_mode = "dark";
-        document.querySelector("body").style.backgroundColor = "black";
         document.querySelector("header").style.color = "white";
-        document.querySelector("#about").style.backgroundColor = "black";
-        document.querySelector("#about").style.color = "white";
-        document.querySelector("#projects").style.backgroundColor = "black";
-        document.querySelector("#projects").style.color = "white";
-        document.querySelector("#certificates").style.backgroundColor = "black";
-        document.querySelector("#certificates").style.color = "white";
         document.querySelectorAll(".c_main").forEach(function(element) {
             element.style.backgroundColor = "rgb(44, 44, 44)";
         });
-        document.querySelector("#contact").style.backgroundColor = "black";
-        document.querySelector("h2").style.color = "white";
         document.querySelectorAll(".contact_link").forEach(function(element) {
             element.style.color = "rgb(255, 255, 255)";
         });
@@ -45,6 +38,14 @@ mode.addEventListener("click", () => {
         });
         mode.style.backgroundColor = "black";
         mode.style.color = "white";
+        body.style.backgroundColor = "black";
+        sec.forEach(function(element) {
+            element.style.backgroundColor = "rgb(0, 0, 0)";
+        });
+        sec.forEach(function(element) {
+            element.style.color = "rgb(255, 255, 255)";
+            element.style.boxShadow = "0 0 10px rgb(75, 75, 75)";
+        });
     }
     else{
         console.log("Dark");
@@ -52,27 +53,26 @@ mode.addEventListener("click", () => {
         current_mode = "light";
         document.querySelector("body").style.backgroundColor = "white";
         document.querySelector("header").style.color = "black";
-        document.querySelector("nav").style.backgroundColor = "black";
-        document.querySelector("#about").style.backgroundColor = "white";
-        document.querySelector("#about").style.color = "black";
-        document.querySelector("#projects").style.backgroundColor = "white";
-        document.querySelector("#projects").style.color = "black";
-        document.querySelector("#certificates").style.backgroundColor = "white";
-        document.querySelector("#certificates").style.color = "black";
+        document.querySelector("nav").style.backgroundColor = "#227C9D";
         document.querySelectorAll(".c_main").forEach(function(element) {
             element.style.backgroundColor = "rgb(218, 216, 216)";
         });
-        document.querySelector("#contact").style.backgroundColor = "white";
-        document.querySelector("h2").style.color = "black";
-
         document.querySelectorAll(".contact_link").forEach(function(element) {
             element.style.color = "rgb(0, 0, 0)";
         });
-        document.querySelector("nav").style.backgroundColor = "black";
+        document.querySelector("nav").style.backgroundColor = "rgb(34, 124, 157)";
         document.querySelectorAll(".resume").forEach(function(element) {
             element.style.color = "rgb(255, 255, 255)";
         });
         mode.style.backgroundColor = "white";
         mode.style.color = "black";
+        body.style.backgroundColor = "white";
+        sec.forEach(function(element) {
+            element.style.backgroundColor = "rgb(255, 255, 255)";
+        });
+        sec.forEach(function(element) {
+            element.style.color = "rgb(0, 0, 0)";
+            element.style.boxShadow = "rgb(218, 216, 216)";
+        });
     }
 })

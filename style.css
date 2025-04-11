@@ -2,8 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 .head{
     display: flex;
@@ -21,7 +19,7 @@ header {
     margin-right: auto;
 }
 nav {
-    background: black;
+    background: rgb(34, 124, 157);
     padding: 10px;
     padding-bottom: 20px;
     text-align: center;
@@ -44,13 +42,6 @@ nav ul li {
     text-decoration: none;
     color: white;
 }
-section {
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(147, 181, 180, 0.546);
-}
 .social-links a {
     margin-right: 10px;
     color: #0077b5;
@@ -68,13 +59,22 @@ section {
 }
 #contact > h2{
     text-align: center;
-
+}
+#body{
+    background-color: #ffffff;
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #929292;
 }
 .c_main{
     width: 100%;
     display: inline-flex;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgb(218, 216, 216);
 }
 .first{
@@ -106,9 +106,6 @@ section {
 }
 .p_img{
     width: 80%;
-    border-radius: 10px;
-}
-.c_img{
     border-radius: 10px;
 }
 .footer{
