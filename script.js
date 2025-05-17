@@ -44,7 +44,7 @@ mode.addEventListener("click", () => {
         });
         sec.forEach(function(element) {
             element.style.color = "rgb(255, 255, 255)";
-            element.style.boxShadow = "0 0 10px rgb(75, 75, 75)";
+            element.style.boxShadow = "0 0 10px rgb(101, 101, 101)";
         });
     }
     else{
