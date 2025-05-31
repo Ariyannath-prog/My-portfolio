@@ -46,7 +46,7 @@ mode.addEventListener("click", () => {
             element.style.color = "rgb(255, 255, 255)";
             element.style.boxShadow = "0 0 10px rgb(101, 101, 101)";
         });
-    }
+    } 
     else{
         console.log("Dark");
         mode.innerText = "Light mode";

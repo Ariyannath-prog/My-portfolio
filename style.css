@@ -156,3 +156,18 @@ section:hover{
     padding-left: 10px;
     padding-right: 10px;
 }
+#yt{
+    text-align: center;
+}
+.vid_main{
+    display: flex;
+    height: 100%;
+}
+.video{
+    width: 50%;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
