@@ -123,6 +123,23 @@ section:hover{
     display: inline-flex;
     margin-right: auto;
     margin-left: auto;
+    border: 2px solid rgb(0, 0, 0);
+    width: 80px;
+    padding: 5px;
+    background-color: rgba(191, 194, 193, 0.557);
+    border-radius: 10px;
+}
+.sub_footer:hover{
+    display: inline-flex;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid rgba(255, 255, 255, 0);
+    width: 80px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px #333232a8;
 }
 .footer_img{
     height: 25px;
