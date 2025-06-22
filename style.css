@@ -206,3 +206,10 @@ section:hover{
         border-radius: 0;
     }
 }
+.sub_text{
+    font-size: 3vmin;
+}
+.sub_text.intro{
+    padding-left: 8vmin;
+    padding-right: 8vmin;
+}
