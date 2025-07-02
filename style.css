@@ -213,3 +213,9 @@ section:hover{
     padding-left: 8vmin;
     padding-right: 8vmin;
 }
+#skills{
+    text-align: center;
+}
+.skl{
+    text-align: left;
+}
