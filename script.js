@@ -19,6 +19,7 @@ let mode = document.querySelector("#mode");
 let current_mode = "light";
 let body = document.querySelector("body");
 let sec = document.querySelectorAll("section");
+let footer_text = document.querySelectorAll(".link_text");
 
 mode.addEventListener("click", () => {
     if(current_mode === "light"){
@@ -45,6 +46,9 @@ mode.addEventListener("click", () => {
         sec.forEach(function(element) {
             element.style.color = "rgb(255, 255, 255)";
             element.style.boxShadow = "0 0 10px rgb(101, 101, 101)";
+        });
+        footer_text.forEach(function(element){
+            element.style.color = "white";
         });
     } 
     else{
@@ -73,6 +77,9 @@ mode.addEventListener("click", () => {
         sec.forEach(function(element) {
             element.style.color = "rgb(0, 0, 0)";
             element.style.boxShadow = "rgb(218, 216, 216)";
+        });
+        footer_text.forEach(function(element){
+            element.style.color = "black";
         });
     }
 })
