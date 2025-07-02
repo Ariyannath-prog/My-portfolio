@@ -207,11 +207,11 @@ section:hover{
     }
 }
 .sub_text{
-    font-size: 3vmin;
+    font-size: 2vmin;
 }
 .sub_text.intro{
-    padding-left: 8vmin;
-    padding-right: 8vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
 }
 #skills{
     text-align: center;
