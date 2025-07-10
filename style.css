@@ -219,3 +219,9 @@ section:hover{
 .skl{
     text-align: left;
 }
+#node_certificate{
+    border-radius: 8px;
+}
+#linkedIn_logo{
+    border-radius: 50px;
+}
