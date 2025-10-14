@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="sections.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body id="body">
@@ -35,7 +37,7 @@
         <p class = "sub_text intro">
           Hi👋, I'm Ariyan Nath, a B.Tech student in Computer Science and Engineering with a strong passion for technology and programming. I thrive on solving problems through code and building projects that are efficient and user-friendly.
           <br><br>
-          I have hands-on experience with HTML, CSS, JavaScript, Node.js, Express, MySQL, C, C++, Git and GitHub which has helped me build a strong foundation in Web development. I’m constantly seeking to expand my skill set, stay up-to-date with the latest industry trends, and take on new challenges that push my capabilities.
+          I have hands-on experience with HTML, CSS, JavaScript, React, Node.js, Express, MySQL, C, C++, Git and GitHub which has helped me build a strong foundation in Web development. I’m constantly seeking to expand my skill set, stay up-to-date with the latest industry trends, and take on new challenges that push my capabilities.
           <br><br>
           My core interest lies in full-stack web development, where I love turning ideas into clean, functional, and responsive websites. As I continue my studies, I aim to further deepen my knowledge and apply it to real-world projects that make a positive impact.
           <br><br>
@@ -44,38 +46,40 @@
     </section><br>
     
     <section id="projects" class="fade-in">
-        <h2>Projects</h2><br>
-        <div class="p_main">
-            <div class="p_first">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
                 <a href="https://ariyannath-prog.github.io/E-Book-Haven/" target="_blank">
-                <img src="gettyimages-1372092540-640x640.jpg" class="p_img">
+                    <img src="gettyimages-1372092540-640x640.jpg" class="project-image" alt="E-Book Haven">
+                    <div class="project-content">
+                        <h3 class="project-title">E-Book Haven</h3>
+                    </div>
                 </a>
-                <br><br>
-                <p class="sub_text">E-Book Haven</p>
-            </div> 
-            <div class="p_first">
-                <a href="https://ariyannath-prog.github.io/SIH-2024-Prototype/" target="_blank">
-                    <img src="garden.jpg" class="p_img">
-                    </a>
-                    <br><br>
-                    <p class="sub_text">Virtual Herbal Garden</p>
             </div>
-        </div>
-        <div class="p_main">
-            <div class="p_first">
+            <div class="project-card">
+                <a href="https://ariyannath-prog.github.io/SIH-2024-Prototype/" target="_blank">
+                    <img src="garden.jpg" class="project-image" alt="Virtual Herbal Garden">
+                    <div class="project-content">
+                        <h3 class="project-title">Virtual Herbal Garden</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
                 <a href="https://ariyannath-prog.github.io/Tic-Tac-Toe/" target="_blank">
-                <img src="tic_tac_toe.png" class="p_img">
+                    <img src="tic_tac_toe.png" class="project-image" alt="Tic Tac Toe Game">
+                    <div class="project-content">
+                        <h3 class="project-title">Tic Tac Toe Game</h3>
+                    </div>
                 </a>
-                <br><br>
-                <p class="sub_text">Tic Tac Toe Game</p>
-            </div> 
-            <div class="p_first">
+            </div>
+            <div class="project-card">
                 <a href="https://ariyannath-prog.github.io/Rock-paper-scissors/" target="_blank">
-                <img src="rock.png" class="p_img">
+                    <img src="rock.png" class="project-image" alt="Rock Paper Scissors">
+                    <div class="project-content">
+                        <h3 class="project-title">Rock Paper Scissors</h3>
+                    </div>
                 </a>
-                <br><br>
-                <p class="sub_text">Rock paper scissor</p>
-            </div> 
+            </div>
         </div>
     </section><br>
 
@@ -166,151 +170,233 @@
     </section><br>
 
     <section id="skills" class="fade-in">
-        <h2>Skills</h2><br>
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3 class="skills-category-title">Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html5" title="HTML5">
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 90%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css3" title="CSS3">
+                            <div class="skill-name">CSS3</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 85%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" title="JavaScript">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 80%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" title="Bootstrap">
+                            <div class="skill-name">Bootstrap</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 75%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" title="React.js">
+                            <div class="skill-name">React.js</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 70%"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html5" title="HTML5" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
+            <div class="skills-category">
+                <h3 class="skills-category-title">Backend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <a href="https://nodejs.org/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="nodejs" title="Node.js">
+                            <div class="skill-name">Node.js</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 85%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon express-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="express" title="Express.js">
+                            <div class="skill-name">Express.js</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 80%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="sql" title="SQL / MySQL">
+                            <div class="skill-name">MySQL</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 75%"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css3" title="CSS3" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
+            <div class="skills-category">
+                <h3 class="skills-category-title">Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <a href="https://www.python.org" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" title="Python">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 85%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" title="C">
+                            <div class="skill-name">C</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 90%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://www.learncpp.com/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" title="C++">
+                            <div class="skill-name">C++</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 80%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://www.java.com" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" title="Java">
+                            <div class="skill-name">Java</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 75%"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" title="JavaScript" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
-
-<a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" title="Bootstrap" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
-
-<a href="https://nodejs.org/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="nodejs" title="Node.js" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
-
-<a href="https://expressjs.com/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="express" title="Express.js" width="38" height="38" style="display: block; filter: invert(100%);" />
-  </div>
-</a>
-
-<a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="sql" title="SQL / MySQL" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
-
-<a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" title="C Programming" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
-
-<a href="https://www.learncpp.com/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" title="C++ Programming" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
-
-<a href="https://www.python.org" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" title="Python" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
-
-<a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" title="Git" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
-
-<a href="https://github.com/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github" title="GitHub" width="38" height="38" style="display: block; border-radius: 12px; background-color: white;" />
-  </div>
-</a>
-
-<a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" alt="bash" title="Bash" width="38" height="38" style="display: block; border-radius: 12px; background-color: white; padding: 2px;" />
-  </div>
-</a>
-
-<a href="https://www.linux.org/" target="_blank" rel="noreferrer">
-  <div style="display: inline-block; padding: 6px; background-color: #1a1a1a; border-radius: 16px;">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" title="Linux" width="38" height="38" style="display: block; border-radius: 12px;" />
-  </div>
-</a>
-
+            <div class="skills-category">
+                <h3 class="skills-category-title">Tools & Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" title="Git">
+                            <div class="skill-name">Git</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 85%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://github.com/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github" title="GitHub">
+                            <div class="skill-name">GitHub</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 85%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" alt="bash" title="Bash">
+                            <div class="skill-name">Bash</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 75%"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="skill-card">
+                        <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+                            <img class="skill-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" title="Linux">
+                            <div class="skill-name">Linux</div>
+                            <div class="skill-proficiency">
+                                <div class="skill-proficiency-bar" style="width: 80%"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <br>
 
     <section id="yt" class="fade-in">
-        <h2>My YouTube content</h2><br>
-        <div class="vid_main">
-            <div class="video-wrapper">
-        <iframe class="video" src="https://www.youtube.com/embed/KBGfU0gTQNI?si=k0DpbJxp60GUNKFa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        </div>
-        <div class="video-wrapper">
-        <iframe class="video" src="https://www.youtube.com/embed/Dv8mzFUCet8?si=PQk2Jt-7CgdNmAn6"YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-        </iframe>
-        </div>
+        <h2>My YouTube Content</h2>
+        <div class="yt-container">
+            <div class="vid-main">
+                <div class="video-wrapper">
+                    <iframe class="video" src="https://www.youtube.com/embed/KBGfU0gTQNI?si=k0DpbJxp60GUNKFa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper">
+                    <iframe class="video" src="https://www.youtube.com/embed/Dv8mzFUCet8?si=PQk2Jt-7CgdNmAn6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
     <br>
     
     <section id="contact" class="fade-in">
-        <h2>Contact</h2><br>
-        <div id="upper_block">
-        <a href="mailto:ariyannath54321@gmail.com" target="_blank">
-        <div class="blocks">
-                <img class="contact_img_g-mail" src="g-mail.webp">
-                <span class="link_text">G-mail</span>
-        </div>
-        </a>
+        <h2>Contact</h2>
+        <div class="contact-grid">
+            <a href="mailto:ariyannath54321@gmail.com" target="_blank">
+                <div class="contact-card">
+                    <img class="contact-icon e-mail" src="g-mail.webp" alt="Email">
+                    <span class="contact-text">Email</span>
+                </div>
+            </a>
 
-         <a href="https://www.youtube.com/@ariyan-nath" target="_blank">
-        <div class="blocks">
-                <img class="contact_img_yt" src="yt.webp">
-                <span class="link_text">Youtube</span>
-        </div>
-        </a>
+            <a href="https://www.youtube.com/@ariyan-nath" target="_blank">
+                <div class="contact-card">
+                    <img class="contact-icon yt" src="yt.webp" alt="YouTube">
+                    <span class="contact-text">YouTube</span>
+                </div>
+            </a>
 
-        <a href="https://www.linkedin.com/in/ariyan-nath-38a123240/". target="_blank">
-        <div class="blocks">
-                <img class="contact_img" id="linkedIn_logo" src="linkedin.webp">
-                <span class="link_text">LinkedIn</span>
-        </div>
-        </a>
+            <a href="https://www.linkedin.com/in/ariyan-nath-38a123240/" target="_blank">
+                <div class="contact-card">
+                    <img class="contact-icon" src="linkedin.webp" alt="LinkedIn">
+                    <span class="contact-text">LinkedIn</span>
+                </div>
+            </a>
 
-        <a href="https://leetcode.com/u/ariyannath-prog/" target="_blank">
-        <div class="blocks">
-                <img class="contact_img" src="leetcode.png">
-                <span class="link_text">LeetCode</span>
-        </div>
-        </a>
+            <a href="https://leetcode.com/u/ariyannath-prog/" target="_blank">
+                <div class="contact-card">
+                    <img class="contact-icon" src="leetcode.png" alt="LeetCode">
+                    <span class="contact-text">LeetCode</span>
+                </div>
+            </a>
 
-        <a href="https://github.com/Ariyannath-prog" target="_blank">
-        <div class="blocks">
-                <img class="contact_img" src="github.png">
-                <span class="link_text">GitHub</span>
+            <a href="https://github.com/Ariyannath-prog" target="_blank">
+                <div class="contact-card">
+                    <img class="contact-icon" src="github.png" alt="GitHub">
+                    <span class="contact-text">GitHub</span>
+                </div>
+            </a>
         </div>
-        </a>
-
-        </div>
-        
     </section>
     <br>
 
