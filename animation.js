@@ -17,7 +17,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 // Observe all elements with fade-in class
 document.addEventListener('DOMContentLoaded', () => {
-    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeElements = document.querySelectorAll('.fade-in, .showcase-fade-in');
     fadeElements.forEach(element => {
         observer.observe(element);
     });

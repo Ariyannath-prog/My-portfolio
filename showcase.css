@@ -1,0 +1,217 @@
+/* Showcase Section Styles */
+.showcase-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    max-width: 1400px;
+}
+
+.showcase-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.showcase-video {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    aspect-ratio: 16/9;
+}
+
+.showcase-video:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.showcase-content {
+    padding: 2rem;
+}
+
+.showcase-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #FF9933, #138808);
+    position: relative;
+    color: white;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.2);
+    overflow: hidden;
+}
+
+.showcase-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        rgba(255, 153, 51, 0.9) 0%,    /* Saffron */
+        rgba(255, 255, 255, 0.9) 50%,  /* White */
+        rgba(19, 136, 8, 0.9) 100%     /* Green */
+    );
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.showcase-badge span {
+    position: relative;
+    z-index: 2;
+}
+
+.showcase-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    line-height: 1.3;
+}
+
+.showcase-description {
+    font-size: 1.1rem;
+    color: #505c6e;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.showcase-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #FF9933, #138808);
+    position: relative;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.2);
+    overflow: hidden;
+}
+
+.showcase-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        rgba(255, 153, 51, 0.9) 0%,    /* Saffron */
+        rgba(255, 255, 255, 0.7) 50%,  /* White */
+        rgba(19, 136, 8, 0.9) 100%     /* Green */
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.showcase-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 153, 51, 0.3);
+}
+
+.showcase-cta:hover::before {
+    opacity: 1;
+}
+
+.showcase-cta span,
+.showcase-cta svg {
+    position: relative;
+    z-index: 1;
+}
+
+.showcase-cta svg {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.showcase-cta:hover svg {
+    transform: translateX(5px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .showcase-section {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .showcase-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .showcase-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .showcase-content {
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .showcase-video {
+        order: -1;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .showcase-section {
+        padding: 2rem 1rem;
+    }
+    
+    .showcase-title {
+        font-size: 1.5rem;
+    }
+    
+    .showcase-description {
+        font-size: 1rem;
+    }
+    
+    .showcase-badge {
+        font-size: 0.8rem;
+    }
+    
+    .showcase-cta {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .showcase-section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .showcase-content {
+        padding: 1rem 0.5rem;
+    }
+}
+
+/* Animation */
+.showcase-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.showcase-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#ongoing-project > h2{
+    text-align: center;
+}
