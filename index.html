@@ -10,28 +10,62 @@
     <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="sections.css">
     <link rel="stylesheet" href="showcase.css">
+    <link rel="stylesheet" href="navigation.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body id="body">
+    
+    <div class="nav-container">
+        <nav class="nav-wrapper">
+            <a href="#" class="nav-brand">
+                <div class="nav-brand-text">
+                    <h1 class="nav-title">Full Stack Developer</h1>
+                </div>
+            </a>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ongoing-project" class="nav-link">SIH Project</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Ariyan nath.pdf" target="_blank" class="nav-button">
+                        View Resume
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button id="mode" class="nav-button">Light mode</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Add spacing for fixed navigation -->
+    <div style="height: 80px;"></div>
+
     <div class="head">
     <header>
         <h1>Ariyan Nath</h1>
         <p id="header1">ꜰᴜʟʟ-ᴛɪᴍᴇ ᴘʀᴏɢʀᴀᴍᴍᴇʀ | ᴘᴀʀᴛ-ᴛɪᴍᴇ ᴄᴏɴᴛᴇɴᴛ ᴄʀᴇᴀᴛᴏʀ | ʙ.ᴛᴇᴄʜ ᴄꜱᴇ | ꜰᴜʟʟ ꜱᴛᴀᴄᴋ ᴡᴇʙ ᴅᴇᴠ | ᴅꜱᴀ</p>
     </header>
     </div>
-    
-    <div class="head">
-    <nav>
-        <ul>
-            <li><a class="resume"  href="#projects">Projects</a></li>
-            <li><a class="resume" href="#certificates">Certificates</a></li>
-            <li><a class="resume" href="#contact">Contact</a></li>
-            &nbsp;
-            <a class="resume" href="Ariyan nath.pdf" target="_blank">Resume</a>
-        </ul>
-        <button id="mode">Light mode</button>
-    </nav>
-    </div><br>
 
     <section id="about" class="fade-in">
         <h2>About Me</h2><br>
@@ -47,15 +81,13 @@
     </section><br>
 
     <section id="ongoing-project" class="showcase-fade-in">
-      <h2>Ongoing Projects</h2>
+      <h2>Ongoing Projects</h2><br>
         <div class="showcase-container">
             <div class="showcase-content">
                 <div class="showcase-badge"><span>SIH 2025 Project</span></div>
-                <h2 class="showcase-title">EcoTech: Revolutionizing Environmental Protection</h2>
+                <h2 class="showcase-title">EcoTech: Revolutionizing Environmental Education</h2>
                 <p class="showcase-description">
-                    Explore our innovative prototype for the Smart India Hackathon 2025. This solution 
-                    addresses critical environmental challenges through smart technology integration 
-                    and real-time monitoring systems.
+                    As part of Smart India Hackathon (SIH) 2025, me and my team worked on the problem statement ID: 25009 and built EcoTech – a Gamified Environmental Education Platform designed for schools and colleges.
                 </p>
                 <a href="https://ecotech-6d533.web.app/index.html" target="_blank" class="showcase-cta">
                     <span>View Live Demo</span>
@@ -435,6 +467,7 @@
 
     <script src="script.js"></script>
     <script src="animation.js"></script>
+    <script src="navigation.js"></script>
     <script src="sw.js"></script>
     <script src="app.js"></script>
 </body>
