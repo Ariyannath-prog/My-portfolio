@@ -6,6 +6,7 @@
     <title>Ariyan Nath - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body id="body">
@@ -29,7 +30,7 @@
     </nav>
     </div><br>
 
-    <section id="about">
+    <section id="about" class="fade-in">
         <h2>About Me</h2><br>
         <p class = "sub_text intro">
           Hi👋, I'm Ariyan Nath, a B.Tech student in Computer Science and Engineering with a strong passion for technology and programming. I thrive on solving problems through code and building projects that are efficient and user-friendly.
@@ -42,7 +43,7 @@
         </p>
     </section><br>
     
-    <section id="projects">
+    <section id="projects" class="fade-in">
         <h2>Projects</h2><br>
         <div class="p_main">
             <div class="p_first">
@@ -78,128 +79,93 @@
         </div>
     </section><br>
 
-    <section id="certificates">
-        <h2>Certificates</h2><br>
-
-        <div class="c_main">
-            <div class="first">
-                <p class="sub_text"><br>
-                    Introduction to Databases for Back-End Development
-                </p>
-            </div>
-            <div class="second">
-                <a href="https://www.coursera.org/account/accomplishments/verify/VITMC6FK58JG" target="_blank" class="right_align_img">
-                    <img id="node_certificate" src="certificates/c9.pdf" width="70%" class="c_img">
+    <section id="certificates" class="fade-in">
+        <h2>Certificates</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card">
+                <a href="https://www.coursera.org/account/accomplishments/verify/VITMC6FK58JG" target="_blank">
+                    <img class="certificate-image" src="certificates/c9.png" alt="Database Certificate">
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Introduction to Databases for Back-End Development</h3>
+                    </div>
                 </a>
             </div>
-        </div><br><br>
 
-        <div class="c_main">
-            <div class="first">
+            <div class="certificate-card">
                 <a href="https://www.coursera.org/account/accomplishments/verify/YUUQKTR56NU3" target="_blank">
-                    <img src="certificates/c8.png" width="70%" class="c_img">
-                </a>
-            </div> 
-            <div class="second">
-                <p class="sub_text"><br>
-                    Developing Back-End Apps with Node.js and Express
-                </p>
-            </div>
-        </div><br><br>
-
-        <div class="c_main">
-            <div class="first">
-                <p class="sub_text"><br>
-                    Node.js
-                </p>
-            </div>
-            <div class="second">
-                <a href="https://www.credly.com/badges/e29deb7a-be6c-4904-8ff8-69b7493f4785/public_url" target="_blank" class="right_align_img">
-                    <img id="node_certificate" src="certificates/c7.png" width="70%" class="c_img">
+                    <img class="certificate-image" src="certificates/c8.png" alt="Node.js Express Certificate">
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Developing Back-End Apps with Node.js and Express</h3>
+                    </div>
                 </a>
             </div>
-        </div><br><br>
 
-        <div class="c_main">
-            <div class="first">
+            <div class="certificate-card">
+                <a href="https://www.credly.com/badges/e29deb7a-be6c-4904-8ff8-69b7493f4785/public_url" target="_blank">
+                    <img class="certificate-image" src="certificates/c7.png" alt="Node.js Certificate">
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Node.js</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="certificate-card">
                 <a href="https://www.coursera.org/account/accomplishments/verify/PC2DEWPLFZX0" target="_blank">
-                    <img src="certificates/c6.png" width="70%" class="c_img">
-                </a>
-            </div> 
-            <div class="second">
-                <p class="sub_text"><br>
-                    HTML and CSS
-                </p>
-            </div>
-        </div><br><br>
-
-        <div class="c_main">
-            <div class="first">
-                <p class="sub_text"><br>
-                    Version Control
-                </p>
-            </div>
-            <div class="second">
-                <a href="https://www.coursera.org/account/accomplishments/verify/FF8ON6X3APPR" target="_blank" class="right_align_img">
-                    <img src="certificates/c5.png" width="70%" class="c_img">
+                    <img class="certificate-image" src="certificates/c6.png" alt="HTML CSS Certificate">
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">HTML and CSS</h3>
+                    </div>
                 </a>
             </div>
-        </div><br><br>
 
-        <div class="c_main">
-            <div class="first">
+            <div class="certificate-card">
+                <a href="https://www.coursera.org/account/accomplishments/verify/FF8ON6X3APPR" target="_blank">
+                    <img class="certificate-image" src="certificates/c5.png" alt="Version Control Certificate">
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Version Control</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="certificate-card">
                 <a href="https://www.coursera.org/account/accomplishments/verify/ER5MW73OZCUL" target="_blank">
-                    <img src="certificates/c4.png" width="70%" class="c_img">
+                    <img class="certificate-image" src="certificates/c4.png" alt="JavaScript Certificate">
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">JavaScript</h3>
+                    </div>
                 </a>
             </div>
-            <div class="second">
-                <p class="sub_text"><br>
-                    JavaScript
-                </p>
-            </div>
-        </div><br><br>
 
-        <div class="c_main">
-            <div class="first">
-                <p class="sub_text"><br>
-                    Front-End
-                </p>
-            </div>
-            <div class="second">
-                <a href="https://www.coursera.org/account/accomplishments/verify/67DHBO7JGWIJ" target="_blank" class="right_align_img">
-                    <img src="certificates/c3.png" width="70%" class="c_img">
+            <div class="certificate-card">
+                <a href="https://www.coursera.org/account/accomplishments/verify/67DHBO7JGWIJ" target="_blank">
+                    <img class="certificate-image" src="certificates/c3.png" alt="Front-End Certificate">
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Front-End Development</h3>
+                    </div>
                 </a>
             </div>
-        </div><br><br>
 
-        <div class="c_main">
-            <div class="first">
+            <div class="certificate-card">
                 <a href="https://www.coursera.org/account/accomplishments/verify/LT7MGAF6KSJW" target="_blank">
-                    <img src="certificates/c2.png" width="70%" class="c_img">
+                    <img class="certificate-image" src="certificates/c2.png" alt="WordPress Certificate">
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">WordPress</h3>
+                    </div>
                 </a>
             </div>
-            <div class="second">
-                <p class="sub_text"><br>
-                    WordPress
-                </p>
-            </div>
-        </div><br><br>
 
-        <div class="c_main">
-            <div class="first">
-                <p class="sub_text"><br>
-                    Canva
-                </p>
-            </div>
-            <div class="second">
-                <a href="https://www.coursera.org/account/accomplishments/verify/9S6BTVG34X0Z" target="_blank" class="right_align_img">
-                    <img src="certificates/c1.png" width="70%" class="c_img">
+            <div class="certificate-card">
+                <a href="https://www.coursera.org/account/accomplishments/verify/9S6BTVG34X0Z" target="_blank">
+                    <img class="certificate-image" src="certificates/c1.png" alt="Canva Certificate">
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Canva</h3>
+                    </div>
                 </a>
             </div>
-        </div><br><br> 
+        </div>
     </section><br>
 
-    <section id="skills">
+    <section id="skills" class="fade-in">
         <h2>Skills</h2><br>
 
         <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
@@ -289,7 +255,7 @@
     </section>
     <br>
 
-    <section id = "yt">
+    <section id="yt" class="fade-in">
         <h2>My YouTube content</h2><br>
         <div class="vid_main">
             <div class="video-wrapper">
@@ -305,7 +271,7 @@
 
     <br>
     
-    <section id="contact">
+    <section id="contact" class="fade-in">
         <h2>Contact</h2><br>
         <div id="upper_block">
         <a href="mailto:ariyannath54321@gmail.com" target="_blank">
@@ -349,6 +315,7 @@
     <br>
 
     <script src="script.js"></script>
+    <script src="animation.js"></script>
     <script src="sw.js"></script>
     <script src="app.js"></script>
 </body>

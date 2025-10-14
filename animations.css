@@ -1,0 +1,90 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.certificate-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover .certificate-image {
+    transform: scale(1.02);
+}
+
+.certificate-content {
+    padding: 1.5rem;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.9));
+}
+
+.certificate-card a {
+    text-decoration: none;
+}
+
+.certificate-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Stagger animation delay for grid items */
+.certificates-grid > div {
+    animation: fadeInUp 0.6s ease backwards;
+}
+
+.certificates-grid > div:nth-child(1) { animation-delay: 0.1s; }
+.certificates-grid > div:nth-child(2) { animation-delay: 0.2s; }
+.certificates-grid > div:nth-child(3) { animation-delay: 0.3s; }
+.certificates-grid > div:nth-child(4) { animation-delay: 0.4s; }
+.certificates-grid > div:nth-child(5) { animation-delay: 0.5s; }
+.certificates-grid > div:nth-child(6) { animation-delay: 0.6s; }
+.certificates-grid > div:nth-child(7) { animation-delay: 0.7s; }
+.certificates-grid > div:nth-child(8) { animation-delay: 0.8s; }
+.certificates-grid > div:nth-child(9) { animation-delay: 0.9s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
