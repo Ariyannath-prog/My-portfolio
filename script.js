@@ -41,11 +41,10 @@ mode.addEventListener("click", () => {
         mode.style.color = "white";
         body.style.backgroundColor = "black";
         sec.forEach(function(element) {
-            element.style.backgroundColor = "rgb(0, 0, 0)";
+            element.style.backgroundColor = "rgba(36, 36, 36, 1)";
         });
         sec.forEach(function(element) {
             element.style.color = "rgb(255, 255, 255)";
-            element.style.boxShadow = "0 0 10px rgb(101, 101, 101)";
         });
         footer_text.forEach(function(element){
             element.style.color = "white";
@@ -72,11 +71,10 @@ mode.addEventListener("click", () => {
         mode.style.color = "black";
         body.style.backgroundColor = "white";
         sec.forEach(function(element) {
-            element.style.backgroundColor = "rgb(255, 255, 255)";
+            element.style.backgroundColor = "#fff4f4";
         });
         sec.forEach(function(element) {
             element.style.color = "rgb(0, 0, 0)";
-            element.style.boxShadow = "rgb(218, 216, 216)";
         });
         footer_text.forEach(function(element){
             element.style.color = "black";
