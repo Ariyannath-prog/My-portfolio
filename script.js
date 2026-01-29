@@ -71,7 +71,7 @@ mode.addEventListener("click", () => {
         mode.style.color = "black";
         body.style.backgroundColor = "white";
         sec.forEach(function(element) {
-            element.style.backgroundColor = "#fff4f4";
+            element.style.backgroundColor = "#e3fcff";
         });
         sec.forEach(function(element) {
             element.style.color = "rgb(0, 0, 0)";
