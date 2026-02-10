@@ -161,7 +161,7 @@
     }
 
     .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
@@ -171,7 +171,8 @@
     }
 
     .contact-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .project-content {
@@ -179,6 +180,25 @@
     }
 
     .contact-card {
-        padding: 1rem;
+        padding: 0.75rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-icon.yt{
+        width: 30px;
+    }
+    
+    .contact-icon.e-mail{
+        width: 28px;
+    }
+
+    .contact-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contact-text {
+        font-size: 0.85rem;
     }
 }

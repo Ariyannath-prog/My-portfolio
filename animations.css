@@ -1,7 +1,9 @@
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition:
+        opacity 0.6s ease-out,
+        transform 0.6s ease-out;
 }
 
 .fade-in.visible {
@@ -25,9 +27,16 @@
 
 .certificate-image {
     width: 100%;
-    height: auto;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 12px;
     transition: transform 0.3s ease;
+}
+
+/* Featured certificate - show only top portion */
+.certificates-grid > div:first-child .certificate-image {
+    object-position: top;
 }
 
 .certificate-card:hover .certificate-image {
@@ -36,7 +45,11 @@
 
 .certificate-content {
     padding: 1.5rem;
-    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.9));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255, 255, 255, 0.9)
+    );
 }
 
 .certificate-card a {
@@ -59,10 +72,25 @@
     margin: 0 auto;
 }
 
+/* Featured certificate spans 2 columns on larger screens */
+@media (min-width: 900px) {
+    .certificates-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .certificates-grid > div:first-child {
+        grid-column: span 1;
+    }
+}
+
 @media (max-width: 1024px) {
     .certificates-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 1.5rem;
+    }
+    
+    .certificate-image {
+        height: 250px;
     }
 }
 
@@ -75,6 +103,10 @@
 
     .certificate-title {
         font-size: 1rem;
+    }
+    
+    .certificate-image {
+        height: 220px;
     }
 }
 
@@ -91,6 +123,10 @@
     .certificate-content {
         padding: 1rem;
     }
+    
+    .certificate-image {
+        height: 200px;
+    }
 }
 
 /* Stagger animation delay for grid items */
@@ -98,15 +134,33 @@
     animation: fadeInUp 0.6s ease backwards;
 }
 
-.certificates-grid > div:nth-child(1) { animation-delay: 0.1s; }
-.certificates-grid > div:nth-child(2) { animation-delay: 0.2s; }
-.certificates-grid > div:nth-child(3) { animation-delay: 0.3s; }
-.certificates-grid > div:nth-child(4) { animation-delay: 0.4s; }
-.certificates-grid > div:nth-child(5) { animation-delay: 0.5s; }
-.certificates-grid > div:nth-child(6) { animation-delay: 0.6s; }
-.certificates-grid > div:nth-child(7) { animation-delay: 0.7s; }
-.certificates-grid > div:nth-child(8) { animation-delay: 0.8s; }
-.certificates-grid > div:nth-child(9) { animation-delay: 0.9s; }
+.certificates-grid > div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.certificates-grid > div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.certificates-grid > div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.certificates-grid > div:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.certificates-grid > div:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.certificates-grid > div:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.certificates-grid > div:nth-child(7) {
+    animation-delay: 0.7s;
+}
+.certificates-grid > div:nth-child(8) {
+    animation-delay: 0.8s;
+}
+.certificates-grid > div:nth-child(9) {
+    animation-delay: 0.9s;
+}
 
 @keyframes fadeInUp {
     from {
