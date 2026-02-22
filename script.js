@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scroll for navigation links
     const links = document.querySelectorAll("nav ul li a");
     links.forEach(link => {
         link.addEventListener("click", function(event) {
@@ -13,71 +14,52 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-});
 
-let mode = document.querySelector("#mode");
-let current_mode = "light";
-let body = document.querySelector("body");
-let sec = document.querySelectorAll("section");
-let footer_text = document.querySelectorAll(".link_text");
+    // Dark Mode Toggle
+    const modeButton = document.querySelector("#mode");
+    const htmlElement = document.documentElement;
+    const bodyElement = document.body;
 
-mode.addEventListener("click", () => {
-    if(current_mode === "light"){
-        console.log("Light");
-        mode.innerText = "Dark mode";
-        current_mode = "dark";
-        document.querySelector("header").style.color = "white";
-        document.querySelectorAll(".c_main").forEach(function(element) {
-            element.style.backgroundColor = "rgb(44, 44, 44)";
-        });
-        document.querySelectorAll(".contact_link").forEach(function(element) {
-            element.style.color = "rgb(255, 255, 255)";
-        });
-        document.querySelector("nav").style.backgroundColor = "white";
-        document.querySelectorAll(".resume").forEach(function(element) {
-            element.style.color = "rgb(0, 0, 0)";
-        });
-        mode.style.backgroundColor = "black";
-        mode.style.color = "white";
-        body.style.backgroundColor = "black";
-        sec.forEach(function(element) {
-            element.style.backgroundColor = "rgba(36, 36, 36, 1)";
-        });
-        sec.forEach(function(element) {
-            element.style.color = "rgb(255, 255, 255)";
-        });
-        footer_text.forEach(function(element){
-            element.style.color = "white";
-        });
-    } 
-    else{
-        console.log("Dark");
-        mode.innerText = "Light mode";
-        current_mode = "light";
-        document.querySelector("body").style.backgroundColor = "white";
-        document.querySelector("header").style.color = "black";
-        document.querySelector("nav").style.backgroundColor = "#227C9D";
-        document.querySelectorAll(".c_main").forEach(function(element) {
-            element.style.backgroundColor = "rgb(218, 216, 216)";
-        });
-        document.querySelectorAll(".contact_link").forEach(function(element) {
-            element.style.color = "rgb(0, 0, 0)";
-        });
-        document.querySelector("nav").style.backgroundColor = "rgb(34, 124, 157)";
-        document.querySelectorAll(".resume").forEach(function(element) {
-            element.style.color = "rgb(255, 255, 255)";
-        });
-        mode.style.backgroundColor = "white";
-        mode.style.color = "black";
-        body.style.backgroundColor = "white";
-        sec.forEach(function(element) {
-            element.style.backgroundColor = "#e3fcff";
-        });
-        sec.forEach(function(element) {
-            element.style.color = "rgb(0, 0, 0)";
-        });
-        footer_text.forEach(function(element){
-            element.style.color = "black";
-        });
+    // Check for saved dark mode preference or use system preference
+    const savedMode = localStorage.getItem("darkMode");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    
+    const isDarkMode = savedMode !== null ? JSON.parse(savedMode) : prefersDark;
+
+    // Initialize dark mode on page load
+    if (isDarkMode) {
+        enableDarkMode();
     }
-})
+
+    // Dark mode toggle event listener
+    modeButton.addEventListener("click", () => {
+        if (bodyElement.classList.contains("dark-mode")) {
+            disableDarkMode();
+        } else {
+            enableDarkMode();
+        }
+    });
+
+    function enableDarkMode() {
+        bodyElement.classList.add("dark-mode");
+        modeButton.textContent = "Light";
+        localStorage.setItem("darkMode", JSON.stringify(true));
+    }
+
+    function disableDarkMode() {
+        bodyElement.classList.remove("dark-mode");
+        modeButton.textContent = "Dark";
+        localStorage.setItem("darkMode", JSON.stringify(false));
+    }
+
+    // Listen for system theme changes
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+        if (localStorage.getItem("darkMode") === null) {
+            if (e.matches) {
+                enableDarkMode();
+            } else {
+                disableDarkMode();
+            }
+        }
+    });
+});

@@ -17,6 +17,11 @@
     position: relative;
 }
 
+body.dark-mode .project-card {
+    background: #2a2a2a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
 .project-card > a {
     text-decoration: none;
 }
@@ -24,6 +29,10 @@
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .project-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
 }
 
 .project-image {
@@ -42,11 +51,20 @@
     background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.9));
 }
 
+body.dark-mode .project-content {
+    background: linear-gradient(to bottom, transparent, rgba(42, 42, 42, 0.9));
+}
+
 .project-title {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 0;
     color: #333;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .project-title {
+    color: #e2e8f0;
 }
 
 /* YouTube Section Styles */
@@ -125,6 +143,11 @@
     font-size: 1rem;
     font-weight: 500;
     color: #333;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .contact-text {
+    color: #000000;
 }
 
 .contact-grid > a {
@@ -167,16 +190,27 @@
 
 @media (max-width: 480px) {
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.65rem;
+        padding: 0.5rem;
+    }
+
+    .project-image {
+        height: 120px;
+    }
+
+    .project-content {
+        padding: 0.5rem 0.4rem;
+    }
+
+    .project-title {
+        font-size: 0.8rem;
+        line-height: 1.25;
     }
 
     .contact-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-    }
-
-    .project-content {
-        padding: 1rem;
     }
 
     .contact-card {

@@ -20,6 +20,11 @@
     color: #2c3e50;
     margin-bottom: 0.5rem;
     position: relative;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .about-title {
+    color: #e2e8f0;
 }
 
 .about-title::after {
@@ -38,12 +43,22 @@
     color: #3498db;
     font-weight: 500;
     margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .about-subtitle {
+    color: #64b5f6;
 }
 
 .about-description {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #505c6e;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .about-description {
+    color: #b0b0b0;
 }
 
 .about-highlights {
@@ -71,12 +86,22 @@
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .highlight-title {
+    color: #64b5f6;
 }
 
 .highlight-text {
     font-size: 1rem;
     color: #505c6e;
     line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .highlight-text {
+    color: #b0b0b0;
 }
 
 .about-image-container {
@@ -112,7 +137,12 @@
     background: white;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .stat-item {
+    background: #2a2a2a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .stat-item:hover {
@@ -124,12 +154,22 @@
     font-weight: 700;
     color: #00aeff;
     margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .stat-number {
+    color: #64b5f6;
 }
 
 .stat-label {
     font-size: 0.9rem;
     color: #030303;
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .stat-label {
+    color: #e2e8f0;
 }
 
 /* Responsive Design */
@@ -188,15 +228,37 @@
     }
 
     .about-highlights {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .highlight-item {
+        padding: 1rem;
+    }
+
+    .highlight-title {
+        font-size: 0.95rem;
+    }
+
+    .highlight-text {
+        font-size: 0.85rem;
     }
 
     .about-stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
     }
 
     .stat-item {
         padding: 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
     }
 
     .about-image {
@@ -205,29 +267,10 @@
 }
 
 /* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    .about-title {
-        color: #9d9d9d;
-    }
+body.dark-mode .about-image {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
 
-    .about-description{
-        color: #656565;
-    }
-
-    .highlight-text {
-        color: #000000;
-    }
-
-    .highlight-title {
-        color: #4da3f4;
-    }
-
-    .highlight-item,
-    .stat-item {
-        background: rgba(161, 161, 161, 0.641);
-    }
-
-    .stat-label {
-        color: #000000;
-    }
+body.dark-mode .highlight-item {
+    background: transparent;
 }
