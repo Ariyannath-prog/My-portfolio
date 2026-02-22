@@ -23,14 +23,14 @@ body.dark-mode .nav-container {
     justify-content: space-between;
     align-items: center;
     min-height: 72px;
-    background: rgb(97, 195, 255);
+    background: rgba(97, 195, 255, 0.48);
     border-radius: 9999px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
     border: none;
 }
 
 body.dark-mode .nav-wrapper {
-    background: rgba(30, 58, 90, 0.95);
+    background: rgba(30, 58, 90, 0.88);
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
