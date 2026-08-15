@@ -29,8 +29,28 @@ body.dark-mode .showcase-section {
     aspect-ratio: 16/9;
 }
 
+.showcase-video img,
+.showcase-video iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.showcase-image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    border-radius: 20px;
+}
+
 body.dark-mode .showcase-video {
     background: #333;
+}
+
+body.dark-mode .showcase-image {
+    background: linear-gradient(135deg, #1f2937, #0f172a);
 }
 
 .showcase-video:hover {
@@ -49,14 +69,14 @@ body.dark-mode .showcase-video:hover {
 .showcase-badge {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #FF9933, #138808);
+    background: linear-gradient(135deg, #ff7a18, #ff9f43);
     position: relative;
     color: white;
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
-    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 122, 24, 0.25);
     overflow: hidden;
 }
 
@@ -67,12 +87,12 @@ body.dark-mode .showcase-video:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, 
-        rgba(255, 153, 51, 0.9) 0%,    /* Saffron */
-        rgba(255, 255, 255, 0.9) 50%,  /* White */
-        rgba(19, 136, 8, 0.9) 100%     /* Green */
+    background: linear-gradient(90deg,
+        rgba(255, 122, 24, 0.95) 0%,
+        rgba(255, 159, 67, 0.9) 50%,
+        rgba(255, 191, 102, 0.95) 100%
     );
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: 1;
 }
 
@@ -110,14 +130,14 @@ body.dark-mode .showcase-description {
     display: inline-flex;
     align-items: center;
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #FF9933, #138808);
+    background: linear-gradient(135deg, #ff7a18, #ff9f43);
     position: relative;
     color: white;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 500;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 122, 24, 0.25);
     overflow: hidden;
 }
 
@@ -128,10 +148,10 @@ body.dark-mode .showcase-description {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, 
-        rgba(255, 153, 51, 0.9) 0%,    /* Saffron */
-        rgba(255, 255, 255, 0.7) 50%,  /* White */
-        rgba(19, 136, 8, 0.9) 100%     /* Green */
+    background: linear-gradient(90deg,
+        rgba(255, 122, 24, 0.95) 0%,
+        rgba(255, 159, 67, 0.9) 50%,
+        rgba(255, 191, 102, 0.95) 100%
     );
     opacity: 0;
     transition: opacity 0.3s ease;
