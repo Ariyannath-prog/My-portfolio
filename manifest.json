@@ -4,7 +4,7 @@
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
-    "description": "A simple Progressive Web App example.",
+    "description": "My portfolio: projects, skills, and research work.",
     "icons": [
         {
             "src": "yt pic.png",
