@@ -129,7 +129,7 @@ body.dark-mode .project-title {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 0.75rem;
 }
 
 .video-wrapper {
